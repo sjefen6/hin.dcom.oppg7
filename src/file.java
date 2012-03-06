@@ -14,6 +14,19 @@ public class file {
 		this.file = file;
 		md5Hash = getMd5Hash(file);
 	}
+	
+	public file (String md5line)
+	{
+		String temp[] = md5line.split("\t");
+		
+		this.md5Hash = temp[0];
+		this.file = new File(temp[1]);
+	}
+	
+	public boolean isMD5Valid()
+	{
+		return this.md5Hash.equals(getMd5Hash(this.file));
+	}
 
 	private String getMd5Hash(File file2) {	
 		byte[] buffer = new byte[8192];

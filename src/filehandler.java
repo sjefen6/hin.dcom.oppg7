@@ -9,7 +9,14 @@ public class filehandler {
 		fileArray = new ArrayList<file>();
 		fileArray.addAll(scan(new File(location)));
 	}
+	
+	public filehandler(File md5file)
+	{
+		
+	}
 
+	
+	// Genererer string som kan puttes i fil.
 	public String getFile() {
 		String temp = "";
 		for (file f : fileArray) {
@@ -22,11 +29,11 @@ public class filehandler {
 	 * Based on:
 	 * https://github.com/narvik-studentradio/Music-Player/blob/master/
 	 * src/contentCollection.java
+	 * 
+	 * Denne metoden kartlegger rekursivt filer. Koden tidligere
+	 * produsert/tilpasset av Vegard Langås for NSR.
 	 */
-	private Collection<? extends file> scan(File path) {
-		/*
-		 * Lets pork out on ArrayLists
-		 */
+	private Collection<? extends file> scan(File path) {		
 		ArrayList<file> tempSongs = new ArrayList<file>();
 		File[] listOfFiles = path.listFiles();
 
