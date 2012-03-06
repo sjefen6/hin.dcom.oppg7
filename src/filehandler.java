@@ -28,7 +28,10 @@ public class filehandler {
 		fileArray.addAll(scan(new File(location)));
 	}
 
-	//Konstruktør for lesing av MD5-fil.
+	/* Konstruktør for lesing av MD5-fil.
+	 * 
+	 * Based on unpublished work by Vegard LangŒs on last Android assignment.
+	 */
 	public filehandler(File md5file) {
 		fileArray = new ArrayList<file>();
 		try {
