@@ -8,6 +8,7 @@ Skriv et program i Java/C# som gjør følgende:
 1. Det bør være mulighet for å verifisere alle filer i en katalog med underkataloger mot tidligere lagrede hash verdier.
 
 Som utgangspunkt for oppgaven kan følgende adresser være nyttige:
+
 * Java program fra Tanenbaum som viser framgansmåten for skanning av alle filer i kataloger og underkataloger
 * Oppsett av Eclipse med Apache Commons ligger her
 * Apache Commons Codec, se adressen http://commons.apache.org/codec/, se spesielt klassen DigestUtils http://commons.apache.org/codec/apidocs/org/apache/commons/codec/digest/DigestUtils.html
@@ -15,6 +16,7 @@ Som utgangspunkt for oppgaven kan følgende adresser være nyttige:
 * Java Security MessageDigest klassen, http://java.sun.com/j2se/1.4.2/docs/api/java/security/MessageDigest.html
 
 Krav til oppgaven:
+
 * Programkoden må være pent oppbygd og strukturert, og godt dokumentert. Bruk gjerne standard retningslinjer for koding, for eksempel den som finnes i Appendix F i Lewis & Loftus: Java Software Solutions.
 * Alle kilder som benyttes må tas med i referanselisten. I selve teksten henviser man på vanlig måte til kilden i referanselisten.
 * Ved innlevering av skriftlige arbeider skal kilder ( Internett, tidsskrift, bok, personlig meddelelse m. fl. ) oppgis både i selve teksten og i en fullstendig litteraturliste.  Ved direkte avskrift, skal det markeres tydelig for eksempel med innrykk og kursivskrift el. lign, og det skal være kildehenvisning med spesifisert sidehenvisning. Avvik fra denne regel anses som fusk eller forsøk på fusk.
@@ -24,6 +26,7 @@ Krav til oppgaven:
 * Forutsetninger som gjøres underveis må kommenteres og begrunnes i rapporten.
 
 Selve rapporten må inneholde:
+
 * Kort oppsummering av problemstilling.
 * Overordnet beskrivelse av programmet som er laget, med vekt på designvalg og problemer som oppstod og ble løst under arbeidet med programmet.
 * Presentasjon og drøfting av resultater fra utprøvingen med hashing av ulike kataloger og verifikasjon der det forekommer både filer som er endret og ikke endret.
