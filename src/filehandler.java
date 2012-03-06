@@ -1,3 +1,12 @@
+/**
+ * filehandler.java
+ * Av: Daniel G. Razafimandimby og Vegard Langås
+ * 
+ * Lisens: Modified BSD License aka BSD 3-clause license
+ * Oblig 7 Datakommunikasjon og Sikkerhet 2011/2012 HiN
+ * 
+ * */
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -13,11 +22,13 @@ import javax.swing.JFileChooser;
 public class filehandler {
 	private ArrayList<file> fileArray;
 
+	//Konstruktør for scanning av mappe.
 	public filehandler(String location) {
 		fileArray = new ArrayList<file>();
 		fileArray.addAll(scan(new File(location)));
 	}
 
+	//Konstruktør for lesing av MD5-fil.
 	public filehandler(File md5file) {
 		fileArray = new ArrayList<file>();
 		try {
@@ -36,6 +47,8 @@ public class filehandler {
 		}
 	}
 
+	//Sjekker alle MD5-verdier, dersom en er feil vil den
+	//returnere false.
 	public boolean verifyMd5Hashes() {
 		for (file f : fileArray) {
 			if (!f.isMD5Valid()) {
