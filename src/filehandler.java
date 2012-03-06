@@ -62,6 +62,9 @@ public class filehandler {
 	 * Based on:
 	 * https://github.com/narvik-studentradio/Playlist-Fucker/blob/master
 	 * /src/FileHandeler.java
+	 * 
+	 * Denne metoden lagrer en fil. Koden tidligere
+	 * produsert/tilpasset av Vegard Langås for NSR.
 	 */
 	public boolean save() {
 		JFileChooser chooser = new JFileChooser();
