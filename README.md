@@ -1,6 +1,6 @@
 #DATAKOMMUNIKASJON OG SIKKERHET, OBLIGATORISK OPPGAVE 7.
 ##Fil integritets sjekker
-MD5 hashing av filer er vanlig for &aring; garantere at en fil ikke er endret etter at den er produsert. En beregner da MD5 hashverdien av filen og tar vare p&aring; denne. Integritetssjekk av filen inneb&aelig;rer &aring; beregne MD5 hash p&aring; nytt og sammenligne med den lagrede verdien. Dersom disse er like kan en anta at filen ikke er endret. Du skal i denne oppgaven skrive en slik integritetssjekker. (Som aalternativ til MD5 kan du benytte SHA256 som anses som en sikrere algoritme)
+[MD5 hashing](http://en.wikipedia.org/wiki/MD5) av filer er vanlig for &aring; garantere at en fil ikke er endret etter at den er produsert. En beregner da MD5 hashverdien av filen og tar vare p&aring; denne. Integritetssjekk av filen inneb&aelig;rer &aring; beregne MD5 hash p&aring; nytt og sammenligne med den lagrede verdien. Dersom disse er like kan en anta at filen ikke er endret. Du skal i denne oppgaven skrive en slik integritetssjekker. (Som aalternativ til MD5 kan du benytte SHA256 som anses som en sikrere algoritme)
 
 ##Skriv et program i Java/C# som gj&oslash;r f&oslash;lgende:
 
@@ -10,10 +10,10 @@ MD5 hashing av filer er vanlig for &aring; garantere at en fil ikke er endret et
 
 ##Som utgangspunkt for oppgaven kan f&oslash;lgende adresser v&aelig;re nyttige:
 
-* Java program fra Tanenbaum som viser framgansm&aring;ten for skanning av alle filer i kataloger og underkataloger
-* Oppsett av Eclipse med Apache Commons ligger her
+* [Java program fra Tanenbaum](http://kark.hin.no/opsys/tanenbaum/java/ExecutableFiles.java) som viser framgansm&aring;ten for skanning av alle filer i kataloger og underkataloger
+* Oppsett av Eclipse med Apache Commons ligger [her](http://kark.hin.no/sikkerhet/filehash/oblig2_tips.html).
 * Apache Commons Codec, se adressen http://commons.apache.org/codec/, se spesielt klassen DigestUtils http://commons.apache.org/codec/apidocs/org/apache/commons/codec/digest/DigestUtils.html
-* MD5 hash fra Java, inneholder eksempel p&aring; bruk av FileStream
+* [MD5 hash fra Java](http://www.oreilly.com/catalog/javacrypt/chapter/ch06.html#33393), inneholder eksempel p&aring; bruk av FileStream
 * Java Security MessageDigest klassen, http://java.sun.com/j2se/1.4.2/docs/api/java/security/MessageDigest.html
 
 ##Krav til oppgaven:
