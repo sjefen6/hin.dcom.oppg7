@@ -9,6 +9,16 @@ public class filehandler {
 		fileArray.addAll(scan(new File(location)));
 	}
 	
+	public String getFile()
+	{
+		String temp = "";
+		for (file f: fileArray)
+		{
+			temp += f.toString();
+		}
+		return temp;
+	}
+	
 	
 	/*
 	 * Based on:
